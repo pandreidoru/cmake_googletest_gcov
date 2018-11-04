@@ -34,13 +34,6 @@ This is a template of a cmake C/C++ project configured for unit testing with [go
   git subtree pull --squash --prefix=lib/googletest git@github.com:google/googletest.git master
   ```
 
-## Note
-
-- The code coverage output can be seen by opening the following file in a web browser:
-
-  > cmake-build-debug/test_coverage/index.html
-  
-
 ## Projects used
 
 - Unit testing
@@ -49,3 +42,10 @@ This is a template of a cmake C/C++ project configured for unit testing with [go
   - [cmake-modules](https://github.com/bilke/cmake-modules)
   - [gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html)
   - [lcov](http://ltp.sourceforge.net/coverage/lcov.php)
+ 
+ 
+## Note
+
+- The code coverage output can be seen by opening the following file in a web browser:
+
+  > cmake-build-debug/test_coverage/index.html
