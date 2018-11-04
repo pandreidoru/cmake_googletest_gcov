@@ -4,15 +4,6 @@
 
 This is a template of a cmake C/C++ project configured for unit testing with [googletest](https://github.com/pandreidoru/cpp_googletest_coverage/tree/master/lib/googletest) and code coverage with [gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html) and [lcov](http://ltp.sourceforge.net/coverage/lcov.php).
 
-## Projects used
-
-- Unit testing
-  - [googletest](https://github.com/pandreidoru/cpp_googletest_coverage/tree/master/lib/googletest)
-- Code coverage
-  - [cmake-modules](https://github.com/bilke/cmake-modules)
-  - [gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html)
-  - [lcov](http://ltp.sourceforge.net/coverage/lcov.php)
-
 ## Project structure
 
 ```
@@ -48,3 +39,13 @@ This is a template of a cmake C/C++ project configured for unit testing with [go
 - The code coverage output can be seen by opening the following file in a web browser:
 
   > cmake-build-debug/test_coverage/index.html
+  
+
+## Projects used
+
+- Unit testing
+  - [googletest](https://github.com/pandreidoru/cpp_googletest_coverage/tree/master/lib/googletest)
+- Code coverage
+  - [cmake-modules](https://github.com/bilke/cmake-modules)
+  - [gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html)
+  - [lcov](http://ltp.sourceforge.net/coverage/lcov.php)
