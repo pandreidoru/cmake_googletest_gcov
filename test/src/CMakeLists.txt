@@ -22,6 +22,6 @@ set(COVERAGE_LCOV_EXCLUDES
     '${gtest_SOURCE_DIR}/*'
     '${PROJECT_SOURCE_DIR}/test/*')
 
-SETUP_TARGET_FOR_COVERAGE_LCOV(NAME cub_coverage
+SETUP_TARGET_FOR_COVERAGE_LCOV(NAME test_coverage
                                EXECUTABLE all_tests
                                DEPENDENCIES all_tests)
