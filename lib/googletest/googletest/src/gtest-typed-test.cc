@@ -57,8 +57,11 @@ static std::vector<std::string> SplitIntoTestNames(const char* src) {
 // Verifies that registered_tests match the test names in
 // registered_tests_; returns registered_tests if successful, or
 // aborts the program otherwise.
-const char* TypedTestCasePState::VerifyRegisteredTestNames(
-    const char* file, int line, const char* registered_tests) {
+const char* TypedTestSuitePState::VerifyRegisteredTestNames(
+    const char* test_suite_name, const char* file, int line,
+    const char* registered_tests) {
+  RegisterTypeParameterizedTestSuite(test_suite_name, CodeLocation(file, line));
+
   typedef RegisteredTestsMap::const_iterator RegisteredTestIter;
   registered_ = true;
 
@@ -89,7 +92,7 @@ const char* TypedTestCasePState::VerifyRegisteredTestNames(
       tests.insert(name);
     } else {
       errors << "No test named " << name
-             << " can be found in this test case.\n";
+             << " can be found in this test suite.\n";
     }
   }
 
