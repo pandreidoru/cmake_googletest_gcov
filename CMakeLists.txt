@@ -6,8 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 list(APPEND CMAKE_MODULE_PATH
      ${PROJECT_SOURCE_DIR}/lib/cmake-modules)
 
-include(EnableExtraCompilerWarnings)
-globally_enable_extra_compiler_warnings()
-
 add_subdirectory(src)
 add_subdirectory(test/src)

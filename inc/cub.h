@@ -1,6 +1,4 @@
-#ifndef CALENDAR_CUBIC_H
-#define CALENDAR_CUBIC_H
+#pragma once
 
 double Cub(int x);
 
-#endif //CALENDAR_CUBIC_H
